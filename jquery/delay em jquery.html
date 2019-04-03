@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delay em jquery</title>
+</head>
+<body>
+
+	<button id="botao">Clique</button>
+	<div class="mensagem"> Olá Mateus</div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		
+		var botao = $("#botao")
+		var mensagem = $(".mensagem")
+
+		botao.on("click", function(){
+			//fadeOut é um remove diferete, o delay vc coloca tempo para execução da funçao
+			mensagem.delay("slow").fadeOut();
+		})
+
+
+	</script>
+
+</body>
+</html>

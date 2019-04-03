@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mouseover no javaScript</title>
+</head>
+<body>
+		<h1 id="meuNome">Mateus Amaral de Almeida Souza</h1>
+
+		<!--Todo css fica dentro do style -->
+		<style type="text/css">
+			
+			.link {
+				color: red;
+			}
+		</style>
+
+	}
+
+
+		<script type="text/javascript">
+			
+			//Captar a informaçao do id "meunome" e registrando na variavel aux
+			var aux = document.getElementById("meuNome")
+			//mouseover é uma função do JS que permite te realizar alguma tarefa quando passa o mouse em cima de algo
+			aux.addEventListener("mouseover", function(){
+				//Está chamando a classe link para mudança de cor
+				aux.classList.add("link");
+			})
+
+			//mouseleave permite realizar tarefa quando se retira o mouse do indicado
+			aux.addEventListener("mouseleave", function(){
+				//classList add ou remove uma classe
+				aux.classList.remove("link");
+			})
+
+		
+
+		</script>
+</body>
+</html>

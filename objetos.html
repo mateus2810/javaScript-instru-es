@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>objetos em JavaScript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		//Objeto, apensa declarar a variavel com chaves
+
+		var carro = { 
+//definiççoes do que compoem o objeto carro -----Sintaxe
+placa: "nyf8862",
+modelo: "gol",
+cor: "preto",
+ano: 2012,
+
+		// objeto dentro de objeto 
+		adicionais: {
+			vidro : "eletrico",
+			ar: "ar condicionado",
+			trava: "alarme eletrico"
+		}
+
+	};
+
+	//mostrar no console
+	console.log(carro.adicionais.ar);
+
+</script>
+</body>
+</html>

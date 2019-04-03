@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>querySelector</title>
+</head>
+<body>
+	<br id="id br">
+	<p id="p1">isso aqui é um paragrafo - 0</p>
+	<p id="p2">p 1 esse aq</p>
+	<p class="classep"> p 2</p>
+	<p class="classep"> p 2</p>
+	<p class ="classep"> ppp bebe </p>
+	<br id="id br">
+	<p id="p1">isso aqui é um paragrafo - 0</p>
+	<p id="p2">p 1 esse aq</p>
+	<p class="classep"> p 2</p>
+	<p class="classep"> p 2</p>
+	<p class ="classep"> ppp bebe </p>
+	<b>negrito doidao</b>
+	<b>posicao 1 negrito</b>
+
+	<script type="text/javascript">
+	//acessar elementos de uma tag especifica do HTML utilizando querySelector
+	//o querySelector acessa tanto class, como id, porem apenas 1 se tiver mais de 1 vc não consegue identificar
+	
+	//acessar classe
+	console.log(
+		document.querySelector(".classep").innerHTML
+		)
+	//acessar id
+	console.log(
+		document.querySelector("#p2")
+		)
+	//acessar paragrafo
+	console.log(
+		document.querySelector("p")
+		)
+
+	//acessar todas classe
+	console.log(
+		document.querySelectorAll(".classep").innerHTML
+		)
+	//acessar todos id
+	console.log(
+		document.querySelectorAll("#p2")
+		)
+	//acessar todos paragrafo
+	console.log(
+		document.querySelectorAll("p")
+		)
+
+
+
+	</script>
+</body>
+</html>

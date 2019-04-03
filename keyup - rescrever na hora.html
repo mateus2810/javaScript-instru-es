@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>keyup em javaScript</title>
+</head>
+<body>
+
+	<h4>Digite aqui o seu nome</h4>
+	<p id="meuParagrafo">Nome</p>
+	<input type="text" id="idNome" name="">
+	<script type="text/javascript">
+
+		var nome = document.getElementById("idNome")
+		var paragrafo = document.getElementById("meuParagrafo")
+
+		//A função keyup sobreescreve, repassa a infomação que está sendo colocada no momento que for executada
+		nome.addEventListener("keyup", function(){
+
+			paragrafo.innerText = this.value;
+		})
+
+	</script>
+</body>
+</html>

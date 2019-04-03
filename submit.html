@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>submit em javaScript</title>
+</head>
+<body>
+
+
+
+
+	Cidade:
+  <div class="form-group">
+    <input type="text" class="form-control" id="cidade" name="cidade" placeholder="">
+  </div>
+  <button id="botao">Enviar</button>
+
+  <p > Sua cidade é <script> botao.innerHtml </script></p>
+  
+
+	<script type="text/javascript">
+
+
+		var botao = document.getElementById("botao");
+		var clique = document.getElementById("botao");
+
+		clique.addEventListener("click", function(){
+      alert(botao.innerText)
+      //botao.innerText = this.value;
+    })
+	</script>
+</body>
+</html>

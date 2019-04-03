@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos em jquery</title>
+</head>
+<body>
+
+	<style type="text/css">
+		
+	div {
+  width: 320px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0; 
+}
+	</style>
+
+	<button id="next"> Next </button>
+	<button id="prev"> Prev </button>
+	<hr>
+	<div class="box"></div>
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		
+		//Salvando elemento em variável, sintaxe para id no jquery
+		var next = $("#next");
+		var prev = $("#prev");
+		//Sintaxe para classe dentro jquery
+		var box = $(".box");
+		
+		next.on("click", function(){
+			alert("next")
+			box.animate({
+				left: "800"
+			},1500)
+		})
+
+		prev.on("click", function(){		
+			alert("prev")
+			box.animate({
+				left: "0"
+			},1500)
+		})
+
+	</script>
+	
+</body>
+</html>

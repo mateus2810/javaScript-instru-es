@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Serialize e SerializeArray em jquery</title>
+		<!--O serialize mostra de forma armazenada os dados expostos -->
+</head>
+<body>
+
+	<form>
+		<label>Cep</label>
+		<input type="text" name="cep" id="cep" placeholder="Digite seu CEP">
+
+		<label>Logradoro</label>
+		<input type="text" name="logradoro" id="logradoro" placeholder="Digite o logradoro">
+
+		<button>Submit</button>
+
+	</form>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="resultado"> Resultado </div>
+
+
+	<script src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+
+		/*var cep = $(".cep")
+		var logradoro = $ (".logradoro")*/
+		//Se resumi so formulario  isso daqui /\
+		var form= $("form")
+		var resultado = $(".resultado")
+
+		form.on("click", function(event){
+			//Evento para não deixar que a página se recarregue
+			event.preventDefault();
+
+			//O serialize mostra de forma armazenada os dados expostos
+			var data = $(this).serialize();
+
+			resultado.text(data);
+
+
+		})
+
+		
+
+	</script>
+</body>
+</html>

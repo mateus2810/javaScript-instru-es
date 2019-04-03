@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>parentNode</title>
+</head>
+<body>
+
+	<div class="Pai do pai">
+
+		<div class="Pai">
+			Grande pai, dentro de uma div
+			<div class="filho ">
+				Simples filho dentro de um grande pai e neto do pai dos pai
+			</div>
+		</div>
+<p class="uai">teste</p>
+		<script type="text/javascript">
+			
+
+			//O parentNode mostra quem é o pai, o que carrega a herança do que vc está pesquisando, nesse exemplo o filho
+			console.log(
+				document.querySelector(".filho").parentNode
+				)
+			
+		</script>
+</body>
+</html>

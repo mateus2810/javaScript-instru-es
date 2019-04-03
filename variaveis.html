@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Variaveis em JavaScript</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		//Uma constante não se torna possivel sobreescrever
+		const nome = "mateus"
+		console.log(nome)
+
+
+		//Variável Global
+		var numero = 28
+
+		function qualquer(){
+			//variável local
+			var oia = 24
+		}
+
+		function qualquer2(){
+			//variável Global se não definido o var
+			 oia = 22
+		}
+
+		qualquer2()
+		console.log(oia)
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>for e forEach em javaScript</title>
+</head>
+<body>
+
+	<div class="js">react</div>
+	<div class="js">angular</div>
+	<div class="js">typescript</div>
+	<p class="doido">teste apenas </p>
+	<div class="js">es6</div>
+
+	<script type="text/javascript">
+		
+		var js = document.getElementsByClassName('js');
+		
+		//O for irá repetir 0,1,2,3 o length indica o tamanho 
+	
+		/*for(let i=0; i< js.length; i++){
+			
+			//js[i].innerHTML é igual a react, angular, typescript, ... passou js[i] para um variavel e vc consegue adicionar coisas alem dessa variavel
+			var texto = js[i].innerHTML;
+			js[i].innerHTML = "olha só " + texto
+			console.log(js[i].innerHTML)
+			//console.log(i);
+		}*/
+
+		var array = ["um","dois","tres"];
+
+		//O forEach ele percorre os elementos dentro de um array.
+		//element está ligado ao elemento do array
+		//index está ligado a posição do array
+		array.forEach(function(element,index){
+			console.log(element,index);
+		})
+
+		//Esse forEach interpreta dentro de todo o array o elemento é "um" entao vai mudar para 1 conforme a condicional if
+		array.forEach(function(element,index){
+			//Se o elemento for igual a "um" entao mudar a posição do array[2] para o numero 1
+			if(element === "um")
+			array[2] = 1
+		})
+		console.log(array)
+
+
+	</script>
+</body>
+</html>
